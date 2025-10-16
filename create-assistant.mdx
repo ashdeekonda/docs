@@ -1,0 +1,113 @@
+---
+title: "Create an Assistant"
+description: "Learn how to create your first assistant in Phinite, configure its environment, and get it ready for flow building."
+sidebar_position: "1"
+roles: "Admin,Architect,Developer"
+environments: "Dev,UAT,Production"
+---
+
+# Create an Assistant
+
+An **Assistant** in Phinite is a multi-skilled AI agent that can communicate, take actions, and orchestrate workflows through flows and nodes.\
+Each Assistant is scoped to a specific **workspace** and **environment**, and can be customized with prompts, tools, and knowledge sources.
+
+---
+
+## Prerequisites
+
+Before creating an Assistant:
+
+- You must have access to a **workspace** 
+- You need the role of **Admin**, **Architect**, or **Developer**.
+- Decide type of assistant 
+  - Conversational
+  - Email assistant
+  - Automonous
+
+---
+
+## Create Your First Assistant
+
+### 1. Navigate to the Assistants Dashboard
+
+- From the left navigation menu, click **Assistants**.
+- You’ll see a list of existing assistants in your current workspace and environment.
+
+### 2. Click **“Create Assistant”**
+
+- A modal or creation form will appear.
+
+### 3. Fill Out Basic Details
+
+| Field              | Description                                                                     |
+| ------------------ | ------------------------------------------------------------------------------- |
+| **Assistant Name** | A unique, descriptive name for your assistant (e.g., “Dental Appointment Bot”). |
+| **Description**    | Short explanation of what the assistant does.                                   |
+| **Type**           | Selected assistant type  `conversatinal`, `Email`, `Autonomous`.                |
+
+<Tip>
+  Keep assistant names short and functional — this will make searching and deploymeneasier later.
+</Tip>
+
+### 4. Select a Creation Method
+
+You can create an assistant in two ways:
+
+- **Start from Scratch** – build your own flows step by step.
+- **Use a Template** – choose from predefined assistant templates (e.g., Sales Demo Scheduler, Customer Support Bot).
+
+### 5. Choose a Base Model & Settings
+
+- Select your preferred **LLM provider** (e.g., OpenAI, Anthropic, local model).
+- Define default settings like:
+  - Temperature
+  - Max tokens
+  - Response mode (text, voice)
+- Optional: Attach a default **Knowledge Base**.
+
+### 6. Save & Launch Builder
+
+- Click **Create Assistant**.
+- You’ll be redirected to the **Flow Builder**, where you can design your agent’s logic visually.
+
+<Check>
+  **Congratulations** — your Assistant has been created and is now ready to be configured with nodes, prompts, and integrations.
+</Check>
+
+
+---
+
+## Example Use Cases
+
+| Assistant Type             | Example Use Case                                 |
+| -------------------------- | ------------------------------------------------ |
+| Customer Support Bot       | Resolve customer queries with integrated KB      |
+| Sales Demo Scheduler       | Handle incoming demo requests automatically      |
+| Healthcare Follow-up Agent | Automate appointment reminders and reports       |
+| Booking Assistant          | Manage reservations, check-ins, and availability |
+
+---
+
+## Role & Environment Notes
+
+- **Admin** and **Architects** can create, edit, and delete assistants.
+- **Developers** can create and edit, but not delete in Production.
+- Assistants created in **Dev** can be promoted to **UAT** or **Production** later.
+
+<Info>
+  If you don't see the **Create Assistant** button, check your role or workspace permissions in **Settings → Members**.
+</Info>
+
+---
+
+## Next Steps
+
+Once your assistant is created:
+
+- [Open the Flow Builder](./flow-builder) and add your first nodes.
+- [Connect a Knowledge Base](../knowledge-and-data/using-knowledge-base) to enrich your assistant.
+- [Invite collaborators](../workspace-settings/invite-users) to work together.
+
+---
+
+✨ _Phinite empowers teams to build production-ready AI agents in minutes — not months._
